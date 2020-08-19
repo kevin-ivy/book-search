@@ -7,6 +7,8 @@ import {GET_ME} from '../utils/queries';
 import {REMOVE_BOOK} from '../utils/mutations';
 
 const SavedBooks = () => {
+
+  // use this to determine if `useEffect()` hook needs to run again
   const [removeBook, { error }] = useMutation(REMOVE_BOOK);
   const { loading, data } = useQuery(GET_ME);
   const userData = data?.me || {};
