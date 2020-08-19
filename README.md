@@ -3,6 +3,8 @@
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  [![HTML](https://img.shields.io/badge/-Node-lightgrey)](https://shields.io/) 
 
   Create a user account, login and search for books, then add them to a reading list for easy cataloguing.
+  
+  ![Screenshot of Application](/thumbnail.jpg)
 
   ## Table of Contents
 
