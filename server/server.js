@@ -1,8 +1,12 @@
 const express = require('express');
 const path = require('path');
 const db = require('./config/connection');
+//const routes = require('./routes');
+// import ApolloServer
 const { ApolloServer } = require('apollo-server-express');
+// import middleware
 const { authMiddleware } = require('./utils/auth');
+// import our typeDefs and resolvers
 const { typeDefs, resolvers } = require('./schemas');
 
 const app = express();
@@ -28,6 +32,7 @@ if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../client/build')));
 }
 
+//app.use(routes);
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
